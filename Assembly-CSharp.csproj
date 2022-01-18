@@ -53,21 +53,36 @@
     <UnityVersion>2021.2.8f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\First person controller\FirstPersonMovement.cs" />
     <Compile Include="Assets\Scripts\First person controller\FirstPersonLook.cs" />
     <Compile Include="Assets\Scripts\Bounce.cs" />
     <Compile Include="Assets\Scripts\First person controller\Jump.cs" />
-    <Compile Include="Assets\Readme.cs" />
+    <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\Teleport.cs" />
-    <Compile Include="Assets\Scripts\First person controller\GroundCheck.cs" />
     <Compile Include="Assets\Coin.cs" />
+    <Compile Include="Assets\Scripts\First person controller\GroundCheck.cs" />
+    <Compile Include="Assets\Scripts\ColorChanger.cs" />
+    <Compile Include="Assets\Scripts\Hazard.cs" />
+    <Compile Include="Assets\Scripts\SpawnNewBlock.cs" />
+    <Compile Include="Assets\ReadMe.cs" />
+    <Compile Include="Assets\Scripts\GameHandler.cs" />
+    <Compile Include="Assets\Scripts\BlockMovement.cs" />
+    <Compile Include="Assets\PlayerColorChange.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Asset Packs\PolygonPrototype\Shaders\Prototype_Glass_Global.shader" />
+    <None Include="Assets\Imported Assets\platformer-pack-redux-360-assets\Spritesheets\spritesheet_enemies.xml" />
+    <None Include="Assets\Imported Assets\platformer-pack-redux-360-assets\License.txt" />
+    <None Include="Assets\Imported Assets\platformer-pack-redux-360-assets\Spritesheets\spritesheet_hud.xml" />
     <None Include="Assets\Asset Packs\PolygonPrototype\Shaders\Prototype_Object.shader" />
+    <None Include="Assets\Imported Assets\kenney_simplifiedplatformer\License.txt" />
+    <None Include="Assets\Imported Assets\platformer-pack-redux-360-assets\Spritesheets\spritesheet_ground.xml" />
     <None Include="Assets\Asset Packs\PolygonPrototype\Shaders\Prototype_Global.shader" />
+    <None Include="Assets\Imported Assets\platformer-pack-redux-360-assets\Spritesheets\spritesheet_items.xml" />
+    <None Include="Assets\Imported Assets\platformer-pack-redux-360-assets\Spritesheets\spritesheet_players.xml" />
     <None Include="Assets\Asset Packs\PolygonPrototype\Shaders\Prototype_Glass_Object.shader" />
+    <None Include="Assets\Imported Assets\platformer-pack-redux-360-assets\Spritesheets\spritesheet_tiles.xml" />
+    <None Include="Assets\Imported Assets\platformer-pack-redux-360-assets\Spritesheets\spritesheet_complete.xml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
