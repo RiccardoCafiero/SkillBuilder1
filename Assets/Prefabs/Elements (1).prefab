@@ -29,6 +29,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.066, y: -3.116, z: 22.908}
   m_LocalScale: {x: 1.5, y: 0.1, z: 1.5}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8344315865334038246}
   m_RootOrder: 1
@@ -52,6 +53,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -121,6 +123,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8344315865539524999}
   - {fileID: 8344315864155744877}
@@ -158,6 +161,7 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.7015712, z: -0, w: 0.71259934}
   m_LocalPosition: {x: 0.618, y: -0.036, z: 22.45}
   m_LocalScale: {x: 1.5, y: 0.1, z: 1.5}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8344315865334038246}
   m_RootOrder: 0
@@ -181,6 +185,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -240,8 +245,7 @@ MonoBehaviour:
   player: {fileID: 0}
   areaLight: {fileID: 8344315865710370890}
   mainWorldLight: {fileID: 0}
-  teleportTargetsArray:
-  - {fileID: 8344315864155744877}
+  deactivatedMat: {fileID: 0}
 --- !u!1 &8344315865710370893
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,6 +273,7 @@ Transform:
   m_LocalRotation: {x: 0.7869451, y: -0, z: -0, w: 0.617023}
   m_LocalPosition: {x: 4, y: -1.53, z: 21.176}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8344315865334038246}
   m_RootOrder: 2
@@ -332,5 +337,6 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0

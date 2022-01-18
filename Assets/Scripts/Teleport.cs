@@ -32,7 +32,9 @@ public class Teleport : MonoBehaviour
         // Challenge 3: DeactivateObject();
         DeactivateObject();
         // Challenge 4: IlluminateArea();
+        IlluminateArea();
         // Challenge 5: StartCoroutine ("BlinkWorldLight");
+        StartCoroutine(BlinkWorldLight());
         // Challenge 6: TeleportPlayerRandom();
     }
 
@@ -51,13 +53,30 @@ public class Teleport : MonoBehaviour
 
     void IlluminateArea()
     {
-       // code goes here 
+        areaLight.gameObject.SetActive(true);
     }
 
-    // IEnumerator BlinkWorldLight()
-    // {
-            // code goes here
-    // }
+    IEnumerator BlinkWorldLight()
+    {
+        float defaultLightIntensity = mainWorldLight.intensity;
+        yield return new WaitForSeconds(0.1f);
+        int cycles = 0;
+        while(cycles < 10)
+        {
+            cycles++;
+            // flicker light
+            if(mainWorldLight.intensity == defaultLightIntensity)
+            {
+                mainWorldLight.intensity = 1f;
+            }
+            else
+            {
+                mainWorldLight.intensity = defaultLightIntensity;
+            }
+
+            yield return new WaitForSeconds(.5f);            
+        }
+     }
 
     void TeleportPlayerRandom()
     {

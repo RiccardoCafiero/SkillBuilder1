@@ -61,6 +61,7 @@
     <Compile Include="Assets\Readme.cs" />
     <Compile Include="Assets\Scripts\Teleport.cs" />
     <Compile Include="Assets\Scripts\First person controller\GroundCheck.cs" />
+    <Compile Include="Assets\Coin.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Asset Packs\PolygonPrototype\Shaders\Prototype_Glass_Global.shader" />
