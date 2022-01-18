@@ -11,11 +11,16 @@ public class Bounce : MonoBehaviour
     
     void OnTriggerEnter(Collider other)
     {
-        // Challenge 1: JumpyJumpy(other);
+        if(other.GetComponent<Rigidbody>() != null)
+        {
+            JumpyJumpy(other);
+        }
     }
 
     void JumpyJumpy(Collider other)
     {
-
+        Rigidbody rb = other.GetComponent<Rigidbody>();
+        Vector3 jumpDir = new Vector3(0f, jumpForce, 0f) ;
+        rb.AddForce(jumpDir);
     }
 }
