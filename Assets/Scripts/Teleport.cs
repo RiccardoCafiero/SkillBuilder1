@@ -11,17 +11,26 @@ public class Teleport : MonoBehaviour
     [SerializeField] GameObject player;
     [SerializeField] Light areaLight;
     [SerializeField] Light mainWorldLight;
+    [SerializeField] Material deactivatedMat;
 
     void Start() 
     {
         // CHALLENGE TIP: Make sure all relevant lights are turned off until you need them on
         // because, you know, that would look cool.
+        // Turn off the lights
+        if (areaLight.isActiveAndEnabled)
+        {
+            areaLight.gameObject.SetActive(false);
+        }
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     void OnTriggerEnter(Collider other) 
     {
         // Challenge 2: TeleportPlayer();
+        TeleportPlayer();
         // Challenge 3: DeactivateObject();
+        DeactivateObject();
         // Challenge 4: IlluminateArea();
         // Challenge 5: StartCoroutine ("BlinkWorldLight");
         // Challenge 6: TeleportPlayerRandom();
@@ -29,12 +38,15 @@ public class Teleport : MonoBehaviour
 
     void TeleportPlayer()
     {
-        // code goes here
+        player.transform.SetPositionAndRotation(teleportTarget.transform.position, Quaternion.identity);
     }
 
     void DeactivateObject()
     {
-       // code goes here 
+        BoxCollider box = this.GetComponent<BoxCollider>();
+        box.enabled = false;
+        MeshRenderer mesh = this.GetComponent<MeshRenderer>();
+        mesh.material = deactivatedMat;
     }
 
     void IlluminateArea()
