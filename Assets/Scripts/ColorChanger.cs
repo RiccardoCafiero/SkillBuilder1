@@ -8,7 +8,8 @@ using UnityEngine;
 public class ColorChanger : MonoBehaviour
 {
     private SpriteRenderer mySpriteRenderer;    
-    public ObjectColor spriteColor;
+    [SerializeField] ObjectColor spriteColor;
+    public ObjectColor SpriteColor { get { return spriteColor; } set { ChangeColor(value); } }
     private Color[] colors = { Color.red, Color.blue, Color.green };
 
     void Awake()
@@ -23,11 +24,13 @@ public class ColorChanger : MonoBehaviour
 
     public void ChangeColor(ObjectColor newColor)
     {
+        spriteColor = newColor;
         mySpriteRenderer.color = colors[(int)newColor];
-        print("Changed internally color to " + newColor);
     }
 
     
 }
 
 public enum ObjectColor { red, blue, green };
+
+

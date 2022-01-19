@@ -53,10 +53,10 @@ public class BlockMovement : MonoBehaviour
     {
         if (!isActiveBool) { return; }
 
-        //if (!myRigidBody.IsTouchingLayers(LayerMask.GetMask("Foreground", "Block")))
-        //{
-        //    return;
-        //}
+        if (!myRigidBody.IsTouchingLayers(LayerMask.GetMask("Foreground", "Block")))
+        {
+            return;
+        }
 
         if (Input.GetButtonDown("Jump"))
         {

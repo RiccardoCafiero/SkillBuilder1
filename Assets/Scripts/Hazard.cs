@@ -18,6 +18,11 @@ public class Hazard : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Block"))
         {
+            if(collision.gameObject.GetComponent<ColorChanger>().SpriteColor ==
+                this.gameObject.GetComponent<ColorChanger>().SpriteColor)
+            {
+                return;
+            }
             if (collision.gameObject.GetComponent<BlockMovement>().isActiveBool)
             {
                 Destroy(collision.gameObject);

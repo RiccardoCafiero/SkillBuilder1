@@ -8,7 +8,7 @@ public class PlayerColorChange : MonoBehaviour
     {
         if (other.CompareTag("Block"))
         {
-            ObjectColor thisColor = GetComponent<ColorChanger>().spriteColor;
+            ObjectColor thisColor = GetComponent<ColorChanger>().SpriteColor;
             other.gameObject.GetComponent<ColorChanger>().ChangeColor(thisColor);
         }
     }

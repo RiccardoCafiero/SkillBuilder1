@@ -14,7 +14,7 @@ public class SpawnNewBlock : MonoBehaviour
     {
         GameObject newBlock = Instantiate(blockPrefab, spawnPosition.position, Quaternion.identity);
         int randomColor = Random.Range(0, 2);
-        newBlock.GetComponent<ColorChanger>().spriteColor = (ObjectColor)randomColor;
+        newBlock.GetComponent<ColorChanger>().SpriteColor = (ObjectColor)randomColor;
 
     }
 }
