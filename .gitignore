@@ -8,6 +8,7 @@ Library/
 .vs/
 UserSettings/
 obj/
+Builds/
 Logs/
 Temp/
 .vsconfig

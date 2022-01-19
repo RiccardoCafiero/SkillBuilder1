@@ -53,23 +53,23 @@
     <UnityVersion>2021.2.8f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\First person controller\FirstPersonMovement.cs" />
-    <Compile Include="Assets\Scripts\First person controller\FirstPersonLook.cs" />
-    <Compile Include="Assets\PlayerColorChange.cs" />
-    <Compile Include="Assets\Scripts\SpawnNewBlock.cs" />
-    <Compile Include="Assets\Scripts\Bounce.cs" />
-    <Compile Include="Assets\Scripts\GameHandler.cs" />
-    <Compile Include="Assets\Scripts\First person controller\Jump.cs" />
+    <Compile Include="Assets\Scripts\Ch1\First person controller\FirstPersonMovement.cs" />
+    <Compile Include="Assets\Scripts\Ch1\First person controller\FirstPersonLook.cs" />
+    <Compile Include="Assets\Scripts\Ch2\PlayerColorChange.cs" />
+    <Compile Include="Assets\Scripts\Ch2\SpawnNewBlock.cs" />
+    <Compile Include="Assets\Scripts\Ch1\Bounce.cs" />
+    <Compile Include="Assets\Scripts\Ch2\CoinCollection.cs" />
+    <Compile Include="Assets\Scripts\Ch2\GameHandler.cs" />
+    <Compile Include="Assets\Scripts\Ch1\First person controller\Jump.cs" />
     <Compile Include="Assets\ReadMe.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
-    <Compile Include="Assets\Scripts\Hazard.cs" />
-    <Compile Include="Assets\Scripts\BlockMovement.cs" />
-    <Compile Include="Assets\Scripts\Teleport.cs" />
-    <Compile Include="Assets\Coin.cs" />
-    <Compile Include="Assets\Scripts\ColorChanger.cs" />
-    <Compile Include="Assets\Scripts\First person controller\GroundCheck.cs" />
-    <Compile Include="Assets\CoinCollection.cs" />
-    <Compile Include="Assets\WinCondition.cs" />
+    <Compile Include="Assets\Scripts\Ch2\Hazard.cs" />
+    <Compile Include="Assets\Scripts\Ch2\BlockMovement.cs" />
+    <Compile Include="Assets\Scripts\Ch1\Teleport.cs" />
+    <Compile Include="Assets\Scripts\Ch2\Coin.cs" />
+    <Compile Include="Assets\Scripts\Ch2\ColorChanger.cs" />
+    <Compile Include="Assets\Scripts\Ch2\WinCondition.cs" />
+    <Compile Include="Assets\Scripts\Ch1\First person controller\GroundCheck.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Asset Packs\PolygonPrototype\Shaders\Prototype_Glass_Global.shader" />
