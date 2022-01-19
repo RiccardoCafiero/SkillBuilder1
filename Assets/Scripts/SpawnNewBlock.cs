@@ -13,7 +13,7 @@ public class SpawnNewBlock : MonoBehaviour
     public void SpawnBlock()
     {
         GameObject newBlock = Instantiate(blockPrefab, spawnPosition.position, Quaternion.identity);
-        int randomColor = Random.Range(0, 2);
+        int randomColor = Random.Range(0, 3);
         newBlock.GetComponent<ColorChanger>().SpriteColor = (ObjectColor)randomColor;
 
     }

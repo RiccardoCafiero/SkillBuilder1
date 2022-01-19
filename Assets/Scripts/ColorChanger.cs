@@ -10,17 +10,14 @@ public class ColorChanger : MonoBehaviour
     private SpriteRenderer mySpriteRenderer;    
     [SerializeField] ObjectColor spriteColor;
     public ObjectColor SpriteColor { get { return spriteColor; } set { ChangeColor(value); } }
-    private Color[] colors = { Color.red, Color.blue, Color.green };
+    private Color[] colors = { Color.red, Color.blue, Color.green, Color.yellow };
 
     void Awake()
     {
         mySpriteRenderer = GetComponent<SpriteRenderer>();
-    }
-
-    private void Start()
-    {
         ChangeColor(spriteColor);
     }
+
 
     public void ChangeColor(ObjectColor newColor)
     {
@@ -31,6 +28,6 @@ public class ColorChanger : MonoBehaviour
     
 }
 
-public enum ObjectColor { red, blue, green };
+public enum ObjectColor { red, blue, green, yellow };
 
 

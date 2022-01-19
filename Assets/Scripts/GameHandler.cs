@@ -12,6 +12,7 @@ public class GameHandler : MonoBehaviour
     void Start()
     {
         AllPlayerBlocksArrayUpdate();
+        SetFlagColor();
     }
 
     void Update()
@@ -91,4 +92,14 @@ public class GameHandler : MonoBehaviour
             }
         }
     }
+
+
+    private void SetFlagColor()
+    {
+        GameObject flag = GameObject.FindGameObjectWithTag("Flag");
+        int randomColor = Random.Range(0, 3);
+        flag.GetComponent<ColorChanger>().SpriteColor = (ObjectColor)randomColor;
+        print("Setting flag color to " + (ObjectColor)randomColor);
+    }
+
 }
