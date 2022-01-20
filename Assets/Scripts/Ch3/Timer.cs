@@ -7,6 +7,7 @@ public class Timer : MonoBehaviour
 {
     Text timerText; 
     float elapsedTime;
+    public bool timerIsRunning = true;
     
     void Start()
     {
@@ -15,6 +16,14 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
+        elapsedTime += Time.deltaTime;
+        int roundedTime = Mathf.RoundToInt(elapsedTime);
+        if (timerIsRunning)
+        {
+            timerText.text = roundedTime.ToString();
+        }
         
     }
+
+    
 }

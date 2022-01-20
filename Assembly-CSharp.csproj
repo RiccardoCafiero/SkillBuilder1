@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>9.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,27 +53,31 @@
     <UnityVersion>2021.2.8f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Assets\Scripts\Ch1\First person controller\FirstPersonMovement.cs" />
     <Compile Include="Assets\Scripts\Ch1\First person controller\FirstPersonLook.cs" />
     <Compile Include="Assets\Scripts\Ch2\PlayerColorChange.cs" />
     <Compile Include="Assets\Scripts\Ch2\SpawnNewBlock.cs" />
+    <Compile Include="Assets\Scripts\Ch3\Exploder.cs" />
     <Compile Include="Assets\Scripts\Ch1\Bounce.cs" />
     <Compile Include="Assets\Scripts\Ch2\CoinCollection.cs" />
     <Compile Include="Assets\Scripts\Ch2\GameHandler.cs" />
     <Compile Include="Assets\Scripts\Ch1\First person controller\Jump.cs" />
+    <Compile Include="Assets\EnemyMover.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\Ch2\Hazard.cs" />
+    <Compile Include="Assets\Scripts\Ch3\Timer.cs" />
+    <Compile Include="Assets\README.cs" />
     <Compile Include="Assets\Scripts\Ch2\BlockMovement.cs" />
     <Compile Include="Assets\Scripts\Ch1\Teleport.cs" />
     <Compile Include="Assets\Scripts\Ch2\Coin.cs" />
     <Compile Include="Assets\Scripts\Ch2\ColorChanger.cs" />
+    <Compile Include="Assets\Scripts\Ch3\Scorer.cs" />
+    <Compile Include="Assets\Scripts\Ch3\Mover.cs" />
     <Compile Include="Assets\Scripts\Ch2\WinCondition.cs" />
     <Compile Include="Assets\Scripts\Ch1\First person controller\GroundCheck.cs" />
-    <Compile Include="Assets\Scripts\Ch3\Timer.cs" />
-    <Compile Include="Assets\Scripts\Ch3\Mover.cs" />
-    <Compile Include="Assets\Scripts\Ch3\Exploder.cs" />
-    <Compile Include="Assets\Scripts\Ch3\Scorer.cs" />
-    <Compile Include="Assets\README.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Asset Packs\PolygonPrototype\Shaders\Prototype_Glass_Global.shader" />
@@ -351,6 +355,9 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.6\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="clipper_library">
+      <HintPath>Library\PackageCache\com.unity.cinemachine@2.8.4\Runtime\ThirdParty\clipper_library.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
@@ -793,8 +800,14 @@
     <Reference Include="Unity.ShaderGraph.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Burst">
       <HintPath>Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
