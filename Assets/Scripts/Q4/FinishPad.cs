@@ -9,10 +9,11 @@ using Q4;
 public class FinishPad : MonoBehaviour
 {
     private GameHandler gameHandler;
+    [SerializeField] ParticleSystem winParticles;
 
     private void Start()
     {
-        //Challenge 3: 
+        gameHandler = GameObject.FindObjectOfType<GameHandler>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -23,6 +24,7 @@ public class FinishPad : MonoBehaviour
             gameHandler.RemovePlayerCubeFromList(other.gameObject.GetComponent<PlayerMovement>());
             Destroy(other.gameObject);
             //Challenge 4:  
+            Instantiate(winParticles, transform.position, Quaternion.identity);
         }
     }
 }
