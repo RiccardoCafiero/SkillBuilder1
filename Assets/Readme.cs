@@ -1,6 +1,6 @@
 ﻿// Welcome to this Quest, which is part of GameDev.tv's Challenge Club.
 
-// For a list of challenges and  instructions on how to complete this Quest
+// For instructions on how to complete this Quest and share your approach, 
 // please visit the members-only Challenge Club section at http://GameDev.tv
 
 // If you're accessing this Quest but you are not yet a member, please come and
